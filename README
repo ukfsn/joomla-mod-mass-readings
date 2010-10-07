@@ -1,0 +1,11 @@
+mod_mass_readings is a Joomla module to retrieve and display the readings
+for the Roman Catholic Mass according to the Ordinary Rite.
+
+The information is retrieved from the feed provided by the good folks at
+dailygospel.org and displayed according to the options specified in the
+configuration via the Joomla admin interface.
+
+This module is Copyright 2010 Jason Clifford <jason@ukfsn.org> and is 
+licensed under the terms of the Free Software Foundation GPL license
+version 2 or any later version of that same license. See the LICENSE
+file for a copy of the GPL license.

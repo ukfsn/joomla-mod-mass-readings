@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Mass Readings</name>
+	<author>Jason Clifford</author>
+	<creationDate>23rd September 2010</creationDate>
+	<copyright>(C) 2010 Jason Clifford</copyright>
+	<license>GPL</license>
+	<authorEmail>jason@ukcatholic.com</authorEmail>
+	<authorUrl>http://www.ukcatholic.com</authorUrl>
+	<version>1.0</version>
+	<description><![CDATA[
+	This module retrieves the Mass Readings for the current day from
+	http://feed.evangelizo.org/reader.php and displays them.
+	]]></description>
+	<files>
+		<filename module="mod_mass_readings">mod_mass_readings.php</filename>
+		<filename>mod_mass_readings.xml</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="displayday" type="list" default="today" label="Select Day to Display" description="PARAMDISPLAYDAY">
+			<option value="today">Current Day</option>
+			<option value="sunday">Sunday of the Current Week</option>
+		</param>
+		<param name="language" type="list" default="AM" label="Language" description="PARAMLANGUAGE">
+			<option value="AR">Arabic</option>
+			<option value="NL">Dutch</option>
+			<option value="AM">English</option>
+			<option value="FR">French</option>
+			<option value="DE">German</option>
+			<option value="IT">Italian</option>
+			<option value="PL">Polish</option>
+			<option value="PT">Portugese</option>
+			<option value="SP">Spanish</option>
+		</param>
+		<param name="reading" type="list" default="reading_st" label="Display" description="PARAMDISPLAY">
+			<option value="reading_st">Short title only</option>
+			<option value="reading_lt">Long title only</option>
+			<option value="reading">Full text of the reading</option>
+		</param>
+		<param name="gettimeout" type="text" default="2" label="Connection Timeout" description="PARAMTIMEOUT" />
+	</params>
+</install>
